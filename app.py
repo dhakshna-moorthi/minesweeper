@@ -26,8 +26,8 @@ def get_completion_from_messages(prompt):
 mine_grid = [[' ' for _ in range(9)] for _ in range(9)]
 
 def create_mine_grid():
-    mine_prompt = f"""Return 9 random indices in a 9x9 array. Your output should only contain a list which contains each index as a sublist with no additional text. 
-    Output sample / format: [[0,7],[1,2],[3,3],[3,7],[4,5],[5,5],[6,0],[7,7],[8,8],[9,3]]
+    mine_prompt = f"""Pleasee return 9 random indices in a 9x9 array. Your output should only contain a list which contains each index as a sublist with no additional text. 
+    Output sample/format: [[0,7],[1,2],[3,3],[3,7],[4,5],[5,5],[6,0],[7,7],[8,8],[9,3]]
     """
 
     mine_indices = get_completion_from_messages(mine_prompt)

@@ -8,8 +8,11 @@
 </head>
 <body>
   <h1>MineSweeper</h1>
-  <form id="minesweeper-grid">
-  </form>
+  <div class="flag-wrapper">
+    <input type="checkbox" class="flag" id="flag" value="Add flag 🚩">
+    <label for="flag">Add flag 🚩</label>
+  </div>
+  <form id="minesweeper-grid"></form>
   <h2 id="result"></h2>
   <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
